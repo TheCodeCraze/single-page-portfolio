@@ -1,32 +1,16 @@
 import Hero from "./Hero";
+import Skills from "./Skills";
 
 const App = () => {
   return (
     <main>
       <Hero />
+      <Skills />
     </main>
   );
 };
 
 export default App;
-
-// HTML
-// 4 Years Experience
-
-// CSS
-// 4 Years Experience
-
-// JavaScript
-// 4 Years Experience
-
-// Accessibility
-// 4 Years Experience
-
-// React
-// 3 Years Experience
-
-// Sass
-// 3 Years Experience
 
 // Projects
 
