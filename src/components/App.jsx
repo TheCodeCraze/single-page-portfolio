@@ -1,19 +1,14 @@
-import styles from "../styles/App.module.css";
+import Hero from "./Hero";
 
 const App = () => {
-  return <main className={styles.main}>App</main>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 };
 
 export default App;
-
-// adamkeyes
-
-// Nice to meet you! I'm Adam Keyes.
-
-// Based in the UK, I'm a front-end developer passionate about
-// building accessible web apps that users love.
-
-// Contact me
 
 // HTML
 // 4 Years Experience

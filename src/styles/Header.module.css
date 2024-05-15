@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 39px;
+  z-index: 1;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 32px;
+  letter-spacing: -0.44px;
+}
+
+.connect {
+  margin-right: 29.51px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon > path {
+  fill: #fff;
+}
+
+.icon:hover > path {
+  fill: #4ee1a0;
+}
