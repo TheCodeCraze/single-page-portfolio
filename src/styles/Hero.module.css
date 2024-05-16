@@ -49,19 +49,27 @@
 }
 
 .cta {
+  width: 120px;
+  height: 38px;
+  background: none;
   margin-top: 23px;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
   font-weight: 700;
   color: #fff;
+  text-transform: uppercase;
   line-height: 26px;
   letter-spacing: 2.29px;
-  text-decoration: 2px solid underline;
-  text-decoration-color: #4ee1a0;
-  text-underline-offset: 16px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #4ee1a0;
+  cursor: pointer;
 }
 
 .cta:hover {
-  cursor: pointer;
   color: #4ee1a0;
 }
 

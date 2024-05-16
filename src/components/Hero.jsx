@@ -4,7 +4,7 @@ import Header from "./Header";
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <Header />
+      <Header inHero={true} />
       <div className={styles.content}>
         <div className={styles.text}>
           <h2 className={styles.title}>
@@ -14,9 +14,7 @@ const Hero = () => {
             Based in the UK, I&apos;m a front-end developer passionate about
             building accessible web apps that users love.
           </p>
-          <a className={styles.cta} href="#">
-            Contact me
-          </a>
+          <button className={styles.cta}>Contact me</button>
         </div>
         <img
           src="/image-profile-desktop.webp"

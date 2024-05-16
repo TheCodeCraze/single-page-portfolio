@@ -7,9 +7,7 @@ const Projects = () => {
     <section className={styles.projects}>
       <div className={styles.top}>
         <h2 className={styles.title}>Projects</h2>
-        <a className={styles.cta} href="#">
-          Contact me
-        </a>
+        <button className={styles.cta}>Contact me</button>
       </div>
       <div className={styles.bottom}>
         {projects.map((project) => (
