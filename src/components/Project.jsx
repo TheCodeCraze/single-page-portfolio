@@ -1,15 +1,28 @@
 import styles from "../styles/Project.module.css";
 import PropType from "prop-types";
+import { v4 as uuidv4 } from "uuid";
 
 const Project = ({ image, name, stack }) => {
   return (
     <div className={styles.project}>
-      <img className={styles.image} src={image} alt={name} />
+      <div className={styles["image-container"]}>
+        <img className={styles.image} src={image} alt={name} />
+        <div className={styles["image-overlay"]}>
+          <div className={styles.links}>
+            <a className={styles.link} href="#">
+              view project
+            </a>
+            <a className={styles.link} href="#">
+              view code
+            </a>
+          </div>
+        </div>
+      </div>
       <div className={styles.info}>
         <h4 className={styles.name}>{name}</h4>
         <div className={styles.stack}>
           {stack.map((stackItem) => (
-            <p key={name} className={styles["stack-item"]}>
+            <p key={uuidv4()} className={styles["stack-item"]}>
               {stackItem}
             </p>
           ))}
