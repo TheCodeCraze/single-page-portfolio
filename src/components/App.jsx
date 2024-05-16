@@ -1,50 +1,18 @@
 import Hero from "./Hero";
 import Skills from "./Skills";
+import Projects from "./Projects";
 
 const App = () => {
   return (
     <main>
       <Hero />
       <Skills />
+      <Projects />
     </main>
   );
 };
 
 export default App;
-
-// Projects
-
-// Contact me
-
-// Design portfolio
-// HTML CSS
-// View project
-// View code
-
-// E-learning landing page
-// HTML CSS
-// View project
-// View code
-
-// Todo web app
-// HTML CSS JavaScript
-// View project
-// View code
-
-// Entertainment web app
-// HTML CSS JavaScript
-// View project
-// View code
-
-// Memory Game
-// HTML CSS JavaScript
-// View project
-// View code
-
-// Art gallery showcase
-// HTML CSS JavaScript
-// View project
-// View code
 
 // Contact
 
