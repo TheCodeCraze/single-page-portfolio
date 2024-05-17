@@ -1,27 +1,30 @@
 .skills {
   width: 100%;
-  height: 467px;
-  padding: 0 165px 140px;
+  height: auto;
+  padding-bottom: 140px;
+  display: flex;
+  justify-content: center;
   background: url("/pattern-rings.svg") top 253px right -239px no-repeat;
 }
 
 .skills-container {
-  width: 100%;
+  width: 1110px;
   height: 100%;
   padding-top: 72px;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
-  gap: 30px;
+  justify-content: center;
+  gap: 58px 30px;
   border-top: 1px solid #d9d9d9;
 }
 
 .skill {
   width: 345px;
+  height: 98px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 14px;
 }
 
 .skill:nth-child(3),
@@ -43,4 +46,69 @@
   color: #d9d9d9;
   line-height: 28px;
   letter-spacing: 0;
+}
+
+@media screen and (max-width: 1130px) {
+  .skills {
+    padding: 0 20px 100px;
+    background: url("/pattern-rings.svg") top 387px right -332px no-repeat;
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills {
+    padding: 0 30px 100px;
+  }
+
+  .skills-container {
+    padding-top: 52px;
+    gap: 52px 7px;
+  }
+
+  .skill:nth-child(3),
+  .skill:nth-child(6) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .skills {
+    background: url("/pattern-rings.svg") bottom -65px right -344px no-repeat;
+  }
+
+  .skill {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills {
+    padding: 0 16px;
+  }
+
+  .skills-container {
+    padding: 40px 0;
+    gap: 24px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .skill {
+    width: 100%;
+    height: 67px;
+  }
+
+  .skill-name {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+
+  .skill-exp {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
