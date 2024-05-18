@@ -1,11 +1,65 @@
 .footer {
   width: 100%;
   height: 675px;
-  padding: 84px 165px 92px;
+  height: auto;
+  padding: 84px 0 131px;
   background: url("/pattern-rings.svg") bottom 219px left -205px no-repeat #242424;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 1110px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .line {
+  width: 100%;
   border-top: 1px solid #fff;
   margin: 92px 0 8px;
+}
+
+@media screen and (max-width: 1140px) {
+  .footer-content {
+    width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .footer {
+    padding: 60px 0 79px;
+    background: url("/pattern-rings.svg") bottom 130px left -368px no-repeat #242424;
+  }
+
+  .footer-content {
+    width: 708px;
+  }
+
+  .line {
+    margin: 92px 0 -9px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .footer-content {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer {
+    padding: 60px 16px 99px;
+    background: url("/pattern-rings.svg") bottom 269px left -343px no-repeat #242424;
+  }
+
+  .footer-content {
+    width: 100%;
+  }
+
+  .line {
+    margin: 87px 0 0;
+  }
 }

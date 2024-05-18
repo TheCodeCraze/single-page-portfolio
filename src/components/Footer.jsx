@@ -5,9 +5,11 @@ import Header from "./Header";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <ContactForm />
-      <hr className={styles.line} />
-      <Header inHero={false} />
+      <div className={styles["footer-content"]}>
+        <ContactForm />
+        <hr className={styles.line} />
+        <Header inHero={false} />
+      </div>
     </footer>
   );
 };

@@ -33,3 +33,19 @@
 .icon:hover > path {
   fill: #4ee1a0;
 }
+
+@media screen and (max-width: 540px) {
+  .header {
+    width: 153.99px;
+    height: 72px;
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .connect {
+    gap: 25.6px;
+  }
+}
