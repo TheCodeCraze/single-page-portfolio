@@ -8,7 +8,7 @@ const Project = ({ image, name, stack }) => {
       <div className={styles["image-container"]}>
         <img className={styles.image} src={image} alt={name} />
         <div className={styles["image-overlay"]}>
-          <div className={styles.links}>
+          <div className={styles["overlay-links"]}>
             <a className={styles.link} href="#">
               view project
             </a>
@@ -27,6 +27,14 @@ const Project = ({ image, name, stack }) => {
             </p>
           ))}
         </div>
+      </div>
+      <div className={styles.links}>
+        <a className={styles.link} href="#">
+          view project
+        </a>
+        <a className={styles.link} href="#">
+          view code
+        </a>
       </div>
     </div>
   );
