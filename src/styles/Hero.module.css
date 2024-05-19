@@ -1,11 +1,19 @@
 .hero {
   width: 100%;
-  height: 824px;
-  padding: 0 165px 104px;
+  height: auto;
+  padding-bottom: 104px;
   background: url("/pattern-rings.svg") top 133px left -100px no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content {
+  width: 1110px;
+  height: auto;
+}
+
+.info {
   width: 100%;
   margin-top: -39px;
   background: url("/pattern-circle.svg") bottom 70px right 380px no-repeat;
@@ -79,4 +87,70 @@
   object-fit: cover;
   position: relative;
   z-index: -1;
+}
+
+@media screen and (max-width: 1140px) {
+  .content {
+    width: 1024px;
+  }
+
+  .text {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .hero {
+    padding-bottom: 60px;
+    background: url("/pattern-rings.svg") top 86px left -265px no-repeat;
+  }
+
+  .content {
+    width: 708px;
+  }
+
+  .info {
+    background: url("/pattern-circle.svg") bottom 0 right -63.44px no-repeat;
+  }
+
+  .text {
+    width: 100%;
+    gap: 0;
+    bottom: 0;
+  }
+
+  .title {
+    width: 430px;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.05px;
+  }
+
+  .description {
+    margin-top: 60px;
+  }
+
+  .cta {
+    margin-top: 34px;
+  }
+
+  .image {
+    content: url("/image-profile-tablet.webp");
+    width: 322px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 0 0 60px 32px;
+    align-items: start;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 740px) {
 }
