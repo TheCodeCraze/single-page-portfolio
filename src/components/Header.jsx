@@ -1,14 +1,10 @@
 import styles from "../styles/Header.module.css";
-import PropTypes from "prop-types";
 
-const Header = ({ inHero }) => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.name}>adamkeyes</h1>
-      <div
-        className={styles.connect}
-        style={{ marginRight: inHero ? "29.51px" : "0" }}
-      >
+      <div className={styles.connect}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
@@ -62,10 +58,6 @@ const Header = ({ inHero }) => {
       </div>
     </header>
   );
-};
-
-Header.propTypes = {
-  inHero: PropTypes.bool.isRequired,
 };
 
 export default Header;

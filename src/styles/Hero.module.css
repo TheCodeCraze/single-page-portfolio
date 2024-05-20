@@ -31,6 +31,7 @@
   position: absolute;
   left: 0;
   bottom: 115px;
+  z-index: 1;
 }
 
 .title {
@@ -85,8 +86,6 @@
   width: 445px;
   height: 720px;
   object-fit: cover;
-  position: relative;
-  z-index: -1;
 }
 
 @media screen and (max-width: 1140px) {
@@ -126,6 +125,11 @@
     letter-spacing: -2.05px;
   }
 
+  .title > span {
+    text-decoration-thickness: 5px;
+    text-underline-offset: 11px;
+  }
+
   .description {
     margin-top: 60px;
   }
@@ -153,4 +157,87 @@
 }
 
 @media screen and (max-width: 740px) {
+  .hero {
+    padding: 0 0 60px;
+    background: url("/pattern-rings.svg") top 124px left -342px no-repeat;
+    align-items: center;
+  }
+
+  .content {
+    width: 500px;
+  }
+
+  .info {
+    background: none;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: unset;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .text {
+    position: static;
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hero {
+    padding-bottom: 80px;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    margin-top: -72px;
+    padding: 0 16px;
+    background: url("/pattern-circle.svg") top 254px right -65px no-repeat;
+  }
+
+  .text {
+    gap: 24px;
+  }
+
+  .title {
+    width: 343px;
+    font-size: 40px;
+    line-height: 40px;
+    line-height: -1.14px;
+  }
+
+  .title > span {
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+  }
+
+  .description {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .cta {
+    margin-top: 0;
+  }
+
+  .image {
+    content: url("/image-profile-mobile.webp");
+    width: 174px;
+    height: 383px;
+  }
 }

@@ -1,8 +1,7 @@
 .footer {
   width: 100%;
-  height: 675px;
   height: auto;
-  padding: 84px 0 131px;
+  padding: 84px 0 92px;
   background: url("/pattern-rings.svg") bottom 219px left -205px no-repeat #242424;
   display: flex;
   justify-content: center;
@@ -10,16 +9,49 @@
 
 .footer-content {
   width: 1110px;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.line {
+.seperator {
   width: 100%;
   border-top: 1px solid #fff;
-  margin: 92px 0 8px;
+  margin: 92px 0 47px;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 32px;
+  letter-spacing: -0.44px;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon > path {
+  fill: #fff;
+}
+
+.icon:hover > path {
+  fill: #4ee1a0;
 }
 
 @media screen and (max-width: 1140px) {
@@ -30,7 +62,7 @@
 
 @media screen and (max-width: 1050px) {
   .footer {
-    padding: 60px 0 79px;
+    padding: 60px 0 40px;
     background: url("/pattern-rings.svg") bottom 130px left -368px no-repeat #242424;
   }
 
@@ -39,7 +71,7 @@
   }
 
   .line {
-    margin: 92px 0 -9px;
+    margin: 92px 0 30px;
   }
 }
 
@@ -51,7 +83,7 @@
 
 @media screen and (max-width: 540px) {
   .footer {
-    padding: 60px 16px 99px;
+    padding: 60px 16px;
     background: url("/pattern-rings.svg") bottom 269px left -343px no-repeat #242424;
   }
 
@@ -60,6 +92,20 @@
   }
 
   .line {
-    margin: 87px 0 0;
+    margin: 87px 0 39px;
+  }
+
+  .info {
+    width: 153.99px;
+    height: 72px;
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .connect {
+    gap: 25.6px;
   }
 }
