@@ -19,7 +19,7 @@ const Project = ({ image, name, stack }) => {
         </div>
       </div>
       <div className={styles.info}>
-        <h4 className={styles.name}>{name}</h4>
+        <h3 className={styles.name}>{name}</h3>
         <div className={styles.stack}>
           {stack.map((stackItem) => (
             <p key={uuidv4()} className={styles["stack-item"]}>

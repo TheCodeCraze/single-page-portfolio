@@ -8,7 +8,7 @@ const Footer = () => {
         <ContactForm />
         <hr className={styles.seperator} />
         <div className={styles.info}>
-          <h1 className={styles.name}>adamkeyes</h1>
+          <p className={styles.name}>adamkeyes</p>
           <div className={styles.connect}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

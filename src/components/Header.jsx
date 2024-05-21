@@ -3,7 +3,7 @@ import styles from "../styles/Header.module.css";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <h1 className={styles.name}>adamkeyes</h1>
+      <p className={styles.name}>adamkeyes</p>
       <div className={styles.connect}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

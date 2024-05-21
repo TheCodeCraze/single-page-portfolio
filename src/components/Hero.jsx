@@ -8,9 +8,9 @@ const Hero = () => {
         <Header />
         <div className={styles.info}>
           <div className={styles.text}>
-            <h2 className={styles.title}>
+            <h1 className={styles.title}>
               Nice to meet you! I&apos;m <span>Adam Keyes</span>.
-            </h2>
+            </h1>
             <p className={styles.description}>
               Based in the UK, I&apos;m a front-end developer passionate about
               building accessible web apps that users love.
