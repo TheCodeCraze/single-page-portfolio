@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: absolute;
   top: 39px;
   z-index: 1;
 }
@@ -35,18 +35,26 @@
   fill: #4ee1a0;
 }
 
+@media screen and (max-width: 1050px) {
+  .header {
+    top: 29px;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .header {
-    width: 153.99px;
     height: 72px;
     flex-direction: column;
+    top: 20px;
   }
 
   .name {
     font-size: 24px;
+    letter-spacing: -0.33px;
   }
 
   .connect {
     gap: 25.6px;
+    margin-right: 0;
   }
 }

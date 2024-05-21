@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
-        <Header inHero={true} />
+        <Header />
         <div className={styles.info}>
           <div className={styles.text}>
             <h2 className={styles.title}>
