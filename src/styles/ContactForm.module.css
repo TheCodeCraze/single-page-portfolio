@@ -118,7 +118,7 @@
 }
 
 .button {
-  width: 144px;
+  width: auto;
   height: 38px;
   background: none;
   display: flex;
